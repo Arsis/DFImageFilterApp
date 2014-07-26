@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="DFViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qL4-Yl-8gG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="445"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsr-9S-Y4P">
+                                <rect key="frame" x="20" y="467" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="gDX-co-b80"/>
+                                </constraints>
+                                <state key="normal" title="Select image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectImagePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TYB-Ly-UsM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOd-QA-0Fm">
+                                <rect key="frame" x="244" y="467" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="3dk-vC-FwG"/>
+                                </constraints>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="B9X-Ur-gfR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEm-17-R1l">
+                                <rect key="frame" x="143" y="467" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="1gU-m3-6kn"/>
+                                </constraints>
+                                <state key="normal" title="Apply filter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="applyFilterPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gO9-Ff-BoT"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7l1-Nr-eYC">
+                                <rect key="frame" x="150" y="234" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0H-Ar-ipa">
+                                <rect key="frame" x="185" y="518" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="bau-Wc-JDu"/>
+                                </constraints>
+                                <state key="normal" title="Clear image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearImageButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xfP-Ba-bXm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qL4-Yl-8gG" secondAttribute="trailing" id="0KX-6r-2Qm"/>
+                            <constraint firstItem="CEm-17-R1l" firstAttribute="leading" secondItem="jsr-9S-Y4P" secondAttribute="trailing" constant="8" id="2l9-j3-Ige"/>
+                            <constraint firstItem="qL4-Yl-8gG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7w5-4y-QwW"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CEm-17-R1l" secondAttribute="bottom" constant="71" id="AFx-8k-iqo"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jsr-9S-Y4P" secondAttribute="bottom" constant="71" id="CWV-tS-8hi"/>
+                            <constraint firstItem="qL4-Yl-8gG" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Nvf-1N-jQZ"/>
+                            <constraint firstAttribute="trailing" secondItem="kOd-QA-0Fm" secondAttribute="trailing" constant="20" id="PdG-qk-fvu"/>
+                            <constraint firstItem="qL4-Yl-8gG" firstAttribute="centerY" secondItem="7l1-Nr-eYC" secondAttribute="centerY" constant="-21.5" id="b8T-kH-1me"/>
+                            <constraint firstItem="kOd-QA-0Fm" firstAttribute="leading" secondItem="CEm-17-R1l" secondAttribute="trailing" constant="8" id="dAg-ma-8vM"/>
+                            <constraint firstItem="kOd-QA-0Fm" firstAttribute="top" secondItem="qL4-Yl-8gG" secondAttribute="bottom" constant="22" id="fMM-7P-EZ4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="O0H-Ar-ipa" secondAttribute="bottom" constant="20" id="fW7-87-nTG"/>
+                            <constraint firstItem="jsr-9S-Y4P" firstAttribute="top" secondItem="qL4-Yl-8gG" secondAttribute="bottom" constant="22" id="gKl-bk-Kjz"/>
+                            <constraint firstItem="jsr-9S-Y4P" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="gNc-bg-ZBN"/>
+                            <constraint firstItem="CEm-17-R1l" firstAttribute="top" secondItem="qL4-Yl-8gG" secondAttribute="bottom" constant="22" id="lCK-1Q-oKJ"/>
+                            <constraint firstAttribute="centerX" secondItem="7l1-Nr-eYC" secondAttribute="centerX" id="m5o-HO-RZD"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="kOd-QA-0Fm" secondAttribute="bottom" constant="71" id="r5F-zy-M3Y"/>
+                            <constraint firstAttribute="trailing" secondItem="O0H-Ar-ipa" secondAttribute="trailing" constant="20" id="wXx-B7-NyY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="7l1-Nr-eYC" id="urm-Zf-hTZ"/>
+                        <outlet property="applyFilterButton" destination="CEm-17-R1l" id="dB4-kI-ooV"/>
+                        <outlet property="clearImageButton" destination="O0H-Ar-ipa" id="Lgr-IA-MYS"/>
+                        <outlet property="imageView" destination="qL4-Yl-8gG" id="kQX-kI-Jie"/>
+                        <outlet property="saveButton" destination="kOd-QA-0Fm" id="8US-Z4-EfU"/>
+                        <outlet property="saveButtonPressed" destination="kOd-QA-0Fm" id="De1-MN-aSp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
